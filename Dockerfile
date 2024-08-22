@@ -5,7 +5,9 @@ WORKDIR /app
 COPY package*.json ./
 COPY . .
 
-RUN npm install
+RUN npm i
+RUN npm i -g @nestjs/cli
+
 RUN nest build
 
 EXPOSE 3000
