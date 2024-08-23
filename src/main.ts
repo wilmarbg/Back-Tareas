@@ -6,13 +6,15 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule)
 
   // Habilitar CORS
-  app.enableCors({
-    origin: '*', // Permite todas las origenes. En producción, especifica los dominios permitidos.
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    preflightContinue: false,
-    optionsSuccessStatus: 204,
-    credentials: true,
-  });
+  // app.enableCors({
+  //   origin: '*', // Permite todas las origenes. En producción, especifica los dominios permitidos.
+  //   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  //   preflightContinue: false,
+  //   optionsSuccessStatus: 204,
+  //   credentials: true,
+  // });
+
+  app.enableCors()
 
   app.useGlobalPipes(
     new ValidationPipe({
