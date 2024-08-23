@@ -5,5 +5,10 @@ services:
     build: .
     ports:
       - "3100:3000"
+    networks:
+      - red-tarea-app
+networks:
+  red-tarea-app:
+    external: true
 
 
