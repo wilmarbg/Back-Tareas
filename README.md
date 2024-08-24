@@ -49,7 +49,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
-# Tecnología usada
+## Tecnología usada
 
 NestJs
 Typescript
@@ -57,19 +57,19 @@ Postgresql
 Docker Compose
 Docker File 
 
-# Archivo deploy.sh contiene todos los comandos necesarios para publicar el proyecto en un contenedor
+## Archivo deploy.sh contiene todos los comandos necesarios para publicar el proyecto en un contenedor
 
-# Por seguridad no se agregaron los archivos .env al git los cuales contienen las credenciales para conexión a Base de Datos
-# Cuando se descargue el proyecto se debe de crear dos archivos env
+## Por seguridad no se agregaron los archivos .env al git los cuales contienen las credenciales para conexión a Base de Datos
+## Cuando se descargue el proyecto se debe de crear dos archivos env
 
 .env
 .prod.env
 
-# Siguiendo la estructura del archivo .example.env
+## Siguiendo la estructura del archivo .example.env
 
-# Script de Base de datos si se quiere realizar pruebas local
+## Script de Base de datos si se quiere realizar pruebas local
 
-# Tabla users
+## Tabla users
 
 CREATE TABLE users (
     id            SERIAL PRIMARY KEY,
@@ -79,7 +79,7 @@ CREATE TABLE users (
     codigo        char(5)
 );
 
-# Tabla tareas
+## Tabla tareas
 
 CREATE TABLE tareas (
     id            SERIAL PRIMARY KEY,
@@ -93,4 +93,4 @@ CREATE TABLE tareas (
     estado        char(2) 
 );
 
-# Teniendo en cuenta que se uso Postgresql para Base de Datos
+## Teniendo en cuenta que se uso Postgresql para Base de Datos
