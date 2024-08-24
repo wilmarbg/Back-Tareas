@@ -10,4 +10,4 @@ docker compose  down
 docker compose  up -d
 
 # Eliminar contenedores e imágenes no utilizados
-docker system prune -a --volumes -f
+#docker system prune -a --volumes -f
