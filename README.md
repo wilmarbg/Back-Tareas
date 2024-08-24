@@ -59,6 +59,10 @@ Nest is [MIT licensed](LICENSE).
 - ESLint
 - Prettier
 
+## Arquitectura
+
+- Modular
+
 ## Archivo deploy.sh contiene todos los comandos necesarios para publicar el proyecto en un contenedor
 
 ## Por seguridad no se agregaron los archivos .env al git los cuales contienen las credenciales para conexión a Base de Datos
