@@ -51,19 +51,21 @@ Nest is [MIT licensed](LICENSE).
 
 ## Tecnología usada
 
-NestJs
-Typescript
-Postgresql
-Docker Compose
-Docker File 
+- NestJs
+- Typescript
+- Postgresql
+- Docker Compose
+- Docker File 
+- ESLint
+- Prettier
 
 ## Archivo deploy.sh contiene todos los comandos necesarios para publicar el proyecto en un contenedor
 
 ## Por seguridad no se agregaron los archivos .env al git los cuales contienen las credenciales para conexión a Base de Datos
 ## Cuando se descargue el proyecto se debe de crear dos archivos env
 
-.env
-.prod.env
+- .env
+- .prod.env
 
 ## Siguiendo la estructura del archivo .example.env
 
