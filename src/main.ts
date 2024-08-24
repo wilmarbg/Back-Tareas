@@ -3,7 +3,7 @@ import { AppModule } from './app.module'
 import { ValidationPipe } from '@nestjs/common'
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule)
+  const app = await NestFactory.create(AppModule, { cors: true })
 
   // Habilitar CORS
   // app.enableCors({
@@ -13,6 +13,8 @@ async function bootstrap() {
   //   optionsSuccessStatus: 204,
   //   credentials: true,
   // });
+
+  app.setGlobalPrefix('/api')
 
   app.enableCors()
 
